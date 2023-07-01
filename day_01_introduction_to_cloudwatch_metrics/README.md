@@ -5,4 +5,4 @@ Following [@MichaelCade's](https://github.com/MichaelCade/90DaysOfDevOps/blob/ma
 1. Continuous learning.
 2. Security focused.
 3. Getting help from friends.
-4. Gathering learning resources.s
+4. Gathering learning resources.
