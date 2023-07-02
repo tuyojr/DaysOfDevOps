@@ -1,0 +1,7 @@
+# Day 02
+
+This contains an introduction into DevSecOps which is more of an approach to software development more than it is a job title.
+
+> "DevSecOps aims to bring together development, security, and operations teams to build and maintain secure software applications. It is based on the principles of continuous integration, continuous delivery, and continuous deployment, which aim to deliver software updates and features more quickly and frequently. In DevSecOps, security is an integral part of the software development process, rather than an afterthought. This means that security testing, monitoring, and other security measures are built into the software development life cycle (SDLC) from the beginning, rather than being added later. DevSecOps aims to improve collaboration and communication between development, security, and operations teams, to create a more efficient and effective software development process."
+
+There was a focus on Automated Security and Security at Scale (Containers and Microservices), and differentiating between DevOps and DevSecOps, and Cybersecurity and DevSecOps.
