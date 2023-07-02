@@ -1,0 +1,4 @@
+day_02_introduction_to_simple_notification_service_(SNS)/.terraform/
+day_02_introduction_to_simple_notification_service_(SNS)/.*.*.hcl
+day_02_introduction_to_simple_notification_service_(SNS)/.*.tfstate.*
+day_02_introduction_to_simple_notification_service_(SNS)/*.tfstate.backup
