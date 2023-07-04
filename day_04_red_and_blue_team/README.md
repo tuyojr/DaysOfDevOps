@@ -12,6 +12,6 @@ In DevSecOps, the red team plays the role of the attacker, trying to find vulner
 
 There are various other teams spoken about and what function it is the perform. They are depicted by colors and cal be seen in the image below.
 
-![infosec_wheel](https://github.com/tuyojr/90DaysOfDevOps/blob/main/day_04_red_and_blue_team/infosec_wheels.jpg)
+![infosec_wheel](https://github.com/tuyojr/90DaysOfDevOps/blob/main/day_04_red_and_blue_team/infosec_wheel.jpg)
 
 [*images used are from here.*](https://hackernoon.com/introducing-the-infosec-colour-wheel-blending-developers-with-red-and-blue-security-teams-6437c1a07700)
