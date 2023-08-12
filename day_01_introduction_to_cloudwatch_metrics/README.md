@@ -6,3 +6,6 @@ Following [@MichaelCade's](https://github.com/MichaelCade/90DaysOfDevOps/blob/ma
 2. Security focused.
 3. Getting help from friends.
 4. Gathering learning resources.
+
+
+Restarted with the [2022 course here](https://github.com/MichaelCade/90DaysOfDevOps/blob/main/2022/Days/day01.md)
