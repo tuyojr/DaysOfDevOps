@@ -7,3 +7,5 @@ This contains an introduction into DevSecOps which is more of an approach to sof
 There was a focus on Automated Security and Security at Scale (Containers and Microservices), and differentiating between DevOps and DevSecOps, and Cybersecurity and DevSecOps.
 
 Got a proper introduction to DevSecOps by watching the 8mins [TechWorldWithNana](https://www.youtube.com/watch?v=nrhxNNH5lt0&list=PLsKoqAvws1pvg7qL7u28_OWfXwqkI3dQ1&index=1&t=19s) video resource provided.
+
+Restarted with the [2022 course here](https://github.com/MichaelCade/90DaysOfDevOps/blob/main/2022/Days/day02.md).
