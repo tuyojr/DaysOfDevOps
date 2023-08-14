@@ -17,3 +17,5 @@ To create an attack map, we need to understand the following:
 5. Identify the attack surface of our application.
 
 freeCodeCamp's Web App Vulnerabilities [video](https://www.youtube.com/watch?v=F5KJVuii0Yw&list=PLsKoqAvws1pvg7qL7u28_OWfXwqkI3dQ1&index=4&t=67s) was a helpful resource here.s
+
+Restarted with the [2022 course here](https://github.com/MichaelCade/90DaysOfDevOps/blob/main/2022/Days/day03.md).
