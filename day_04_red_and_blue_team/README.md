@@ -15,3 +15,5 @@ There are various other teams spoken about and what function it is the perform. 
 ![infosec_wheel](https://github.com/tuyojr/90DaysOfDevOps/blob/main/day_04_red_and_blue_team/infosec_wheel.jpg)
 
 [*images used are from here.*](https://hackernoon.com/introducing-the-infosec-colour-wheel-blending-developers-with-red-and-blue-security-teams-6437c1a07700)
+
+Restarted with the [2022 course here](https://github.com/MichaelCade/90DaysOfDevOps/blob/main/2022/Days/day03.md).
