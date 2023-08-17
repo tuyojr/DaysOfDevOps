@@ -16,4 +16,5 @@ There are various other teams spoken about and what function it is the perform. 
 
 [*images used are from here.*](https://hackernoon.com/introducing-the-infosec-colour-wheel-blending-developers-with-red-and-blue-security-teams-6437c1a07700)
 
+## Agile VS DevOps
 Restarted with the [2022 course here](https://github.com/MichaelCade/90DaysOfDevOps/blob/main/2022/Days/day03.md).
