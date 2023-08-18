@@ -19,3 +19,6 @@ Following MichaelCade's resoursces, a useful [here](https://www.youtube.com/watc
 - **Adopt** - If you are going to take this on within your software or as a standalone app within your own stack, who is going to manage and maintain it? Set some policies on who internally will overlook the project and support the community.
 
 - **Act** - Security is the responsibility of everyone, not just the maintainers, as a user you should also act and assist with the project.
+
+## DevOps
+Restarted with the [2022 course here](https://github.com/MichaelCade/90DaysOfDevOps/blob/main/2022/Days/day05.md).
