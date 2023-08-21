@@ -12,7 +12,7 @@ Most DevOps engineers make use of Python as their preferred programming language
 
 Another Benefit of Golang is that unlike Python which requires external libraries to be installed when runing on a remote machine, it is compiled into a single binary which can be run anywhere. Golang is also platform independent.
 
-> Installing [Golang]() on wsl2
+> Installing [Golang](https://dev.to/deadwin19/how-to-install-golang-on-wslwsl2-2880) on wsl2
 
 ``` SHELL
 # Click the hyperlink above to get the https link of the latest version.
