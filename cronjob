@@ -1,0 +1,1 @@
+@reboot sh /home/tuyojr/update_apt_repository_on_start.sh
