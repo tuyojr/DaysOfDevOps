@@ -13,4 +13,11 @@ func main() {
 	shapes["octagon"] = 8
 
 	fmt.Println(shapes)
+
+	// get the value of a particular key
+	fmt.Println(shapes["octagon"])
+
+	// use the delete function to remove something from the map
+	delete(shapes, "triangle")
+	fmt.Println(shapes)
 }
