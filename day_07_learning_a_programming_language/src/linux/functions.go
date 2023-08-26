@@ -26,6 +26,7 @@ func sum(x int, y int) int {
 
 // function that has multiple return statements
 // func funcName (paramName paramType, paramName paramType) (returnType, returnType) { code }
+
 func sqrt(x float64) (float64, error) {
 	if x < 0 {
 		return 0, errors.New("undefined for negative numbers")
