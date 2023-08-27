@@ -1,4 +1,4 @@
- #!/bin/bash
+#!/bin/bash
 
 # Update the log file everytime the script is run
 date >> /home/tuyojr/update_logs.txt
