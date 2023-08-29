@@ -2,9 +2,12 @@
 
 > For a more comprehensive article on this day, please refer to this [link.](https://github.com/MichaelCade/90DaysOfDevOps/blob/main/2022/Days/day07.md)
 
+I have compressed a few days into this one day. Although, I did not do everything written here on this day alone. It 
+spanned over a few days. I have also added a few things I learnt on my own.
+
 ## Why do we need to learn a programming language as DevOps Engineers?
 
-We need to learning a programming language because some of the tools we will use for most of the DevOps practices we will embark on are written in various programming languages. We do not now need to learn all of the wide array of functionalities of each programming language we will need to use, we just need to understand or have an indepth foundational knowledge of the language so we can understand other codes, and also when we need it to perform certain repetitive tasks, we can easily employ the programming languages to help perform those tasks on our behalf.
+We need to learning a programming language because some of the tools we will use for most of the DevOps practiceswe will embark on are written in various programming languages. We do not now need to learn all of the wide array of functionalities of each programming language we will need to use, we just need to understand or have an indepth foundational knowledge of the language so we can understand other codes, and also when we need it to perform certain repetitive tasks, we can easily employ the programming languages to help perform those tasks on our behalf.
 
 ## Which Programming Language Will We Use?
 
@@ -30,3 +33,8 @@ export PATH=$PATH:/usr/local/go/bin
 # Check the installed go version
 go version
 ```
+
+### Resources
+
+- [Jake Wright - Learn Go in 12 minutes](https://www.youtube.com/watch?v=C8LgvuEBraI)
+- [TechworldWithNana - Golang full course - 3 hours 24 mins](https://www.youtube.com/watch?v=yyUHQIec83I)
