@@ -15,6 +15,10 @@ func main() {
 	dynamicArr := []int{1, 2, 3, 4, 5}
 	dynamicArr = append(dynamicArr, 6, 7, 8, 9, 10)
 
+	// dynamic string array
+	strArr := []string{"Shisui", "Madara", "Obito", "Itachi"}
+	strArr = append(strArr, "Sasuke", "Fugaku")
+
 	fmt.Println(fixedArr)
 	fmt.Println(slice)
 	fmt.Println(dynamicArr)
