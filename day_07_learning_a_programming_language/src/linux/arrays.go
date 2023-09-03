@@ -22,4 +22,5 @@ func main() {
 	fmt.Println(fixedArr)
 	fmt.Println(slice)
 	fmt.Println(dynamicArr)
+	fmt.Println(strArr)
 }
