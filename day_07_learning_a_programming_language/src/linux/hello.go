@@ -10,5 +10,5 @@ import (
 // this is where the program starts
 func main() {
 	fmt.Println("Wagwan peeps!!!")
-	fmt.Println("This is the first Go program")
+	fmt.Println("This is the first Go program.")
 }
