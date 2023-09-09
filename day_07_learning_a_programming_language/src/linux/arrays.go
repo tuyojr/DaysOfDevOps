@@ -19,6 +19,8 @@ func main() {
 	strArr := []string{"Shisui", "Madara", "Obito", "Itachi"}
 	strArr = append(strArr, "Sasuke", "Fugaku")
 
+	boolArr := [2]bool{true, false}
+
 	fmt.Println(fixedArr)
 	fmt.Println(slice)
 	fmt.Println(dynamicArr)
