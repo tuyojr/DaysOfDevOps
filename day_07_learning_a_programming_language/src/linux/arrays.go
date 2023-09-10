@@ -25,4 +25,5 @@ func main() {
 	fmt.Println(slice)
 	fmt.Println(dynamicArr)
 	fmt.Println(strArr)
+	fmt.Println(boolArr)
 }
