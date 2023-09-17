@@ -45,7 +45,7 @@ export PATH=$PATH:/usr/local/go/bin
 go version
 ```
 
-### Resources
+### Resources For Learning GoLang
 
 - [Jake Wright - Learn Go in 12 minutes](https://www.youtube.com/watch?v=C8LgvuEBraI)
 - [TechworldWithNana - Golang full course - 3 hours 24 mins](https://www.youtube.com/watch?v=yyUHQIec83I)
