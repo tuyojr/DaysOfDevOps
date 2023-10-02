@@ -13,6 +13,8 @@ func main() {
 	fmt.Printf("There are %v tickets in total, and there are %v tickets still available.\n", conferenceTickets, remainingTickets)
 	fmt.Println("You can buy your tickets here to attend.")
 
+	bookings := []string{}
+
 	var firstName string
 	var lastName string
 	var email string
