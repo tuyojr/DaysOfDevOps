@@ -3,17 +3,16 @@ package main
 import "fmt"
 
 func main() {
-	var conferenceName = "Muffin Conference"
+	// this alternative syntax cannot be used to declare constants ==> variable := value
+	conferenceName := "Muffin Conference"
 	const conferenceTickets = 27
 
-	// this alternative syntax cannot be used to declare constants ==> variable := value
 	var remainingTickets uint = 27
+	var bookings []string
 
 	fmt.Printf("Welcome to the %v booking application.\n", conferenceName)
 	fmt.Printf("There are %v tickets in total, and there are %v tickets still available.\n", conferenceTickets, remainingTickets)
 	fmt.Println("You can buy your tickets here to attend.")
-
-	bookings := []string{}
 
 	var firstName string
 	var lastName string
@@ -35,6 +34,13 @@ func main() {
 	fmt.Scan(&userTickets)
 
 	remainingTickets = remainingTickets - userTickets
+
+	bookings = append(bookings, firstName+" "+lastName)
+
+	fmt.Printf("This is the whole slice of people that have booked: %v \n", bookings)
+	fmt.Printf("The first value: %v\n", bookings)
+	fmt.Printf("Slice type: %T \n", bookings)
+	fmt.Printf("Slice length: %v \n", len(bookings))
 
 	fmt.Printf("Thank you %v %v! You have successfully bought %v tickets, you should get a confirmation shortly in your email: %v.\n", firstName, lastName, userTickets, email)
 
