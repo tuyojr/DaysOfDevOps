@@ -54,5 +54,12 @@ func main() {
 		}
 
 		fmt.Printf("The people who have booked include: %v\n", firstNames)
+
+		noTicketsRemaining := remainingTickets == 0
+
+		if noTicketsRemaining {
+			fmt.Printf("Sorry, %v tickets have been sold out. See you next year!", conferenceName)
+			break
+		}
 	}
 }
