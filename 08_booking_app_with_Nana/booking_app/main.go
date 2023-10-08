@@ -38,6 +38,11 @@ func main() {
 		fmt.Println("Please enter how many tickets you want:")
 		fmt.Scan(&userTickets)
 
+		if userTickets > remainingTickets {
+			fmt.Printf("We only have %v, you can't book %v tickets.", remainingTickets, userTickets)
+			break
+		}
+
 		remainingTickets = remainingTickets - userTickets
 
 		bookings = append(bookings, firstName+" "+lastName)
