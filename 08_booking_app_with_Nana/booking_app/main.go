@@ -38,33 +38,33 @@ func main() {
 		fmt.Println("Please enter how many tickets you want:")
 		fmt.Scan(&userTickets)
 
-		if userTickets > remainingTickets {
-			fmt.Printf("We only have %v, you can't book %v tickets.", remainingTickets, userTickets)
-			continue
+		if userTickets <= remainingTickets {
+			remainingTickets = remainingTickets - userTickets
+
+			bookings = append(bookings, firstName+" "+lastName)
+
+			fmt.Printf("Thank you %v %v! You have successfully bought %v tickets, you should get a confirmation shortly in your email: %v.\n", firstName, lastName, userTickets, email)
+
+			fmt.Printf("There are now %v tickets left.\n", remainingTickets)
+
+			firstNames := []string{}
+
+			for _, booking := range bookings { // _ is a blank identifier, it is a variable we are explicitly not using.
+				var names = strings.Fields(booking)
+				firstNames = append(firstNames, names[0])
+			}
+
+			fmt.Printf("The people who have booked include: %v\n", firstNames)
+
+			noTicketsRemaining := remainingTickets == 0
+
+			if noTicketsRemaining {
+				fmt.Printf("Sorry, %v tickets have been sold out. See you next year!", conferenceName)
+				break
+			}
+		} else {
+			fmt.Printf("We only have %v, you can't book %v tickets.\nTry again please.\n", remainingTickets, userTickets)
 		}
 
-		remainingTickets = remainingTickets - userTickets
-
-		bookings = append(bookings, firstName+" "+lastName)
-
-		fmt.Printf("Thank you %v %v! You have successfully bought %v tickets, you should get a confirmation shortly in your email: %v.\n", firstName, lastName, userTickets, email)
-
-		fmt.Printf("There are now %v tickets left.\n", remainingTickets)
-
-		firstNames := []string{}
-
-		for _, booking := range bookings { // _ is a blank identifier, it is a variable we are explicitly not using.
-			var names = strings.Fields(booking)
-			firstNames = append(firstNames, names[0])
-		}
-
-		fmt.Printf("The people who have booked include: %v\n", firstNames)
-
-		noTicketsRemaining := remainingTickets == 0
-
-		if noTicketsRemaining {
-			fmt.Printf("Sorry, %v tickets have been sold out. See you next year!", conferenceName)
-			break
-		}
 	}
 }
