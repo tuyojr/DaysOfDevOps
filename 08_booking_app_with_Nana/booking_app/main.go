@@ -9,13 +9,10 @@ func main() {
 	// this alternative syntax cannot be used to declare constants ==> variable := value
 	conferenceName := "Muffin Conference"
 	const conferenceTickets = 27
-
 	var remainingTickets uint = 27
 	var bookings []string
 
-	fmt.Printf("Welcome to the %v booking application.\n", conferenceName)
-	fmt.Printf("There are %v tickets in total, and there are %v tickets still available.\n", conferenceTickets, remainingTickets)
-	fmt.Println("You can buy your tickets here to attend.")
+	greetUsers(conferenceName, conferenceTickets, remainingTickets)
 
 	for {
 
@@ -83,4 +80,10 @@ func main() {
 			}
 		}
 	}
+}
+
+func greetUsers(conferenceName string, conferenceTickets int, remainingTickets uint) {
+	fmt.Printf("Welcome to the %v.\n", conferenceName)
+	fmt.Printf("There are %v tickets in total, and there are %v tickets still available.\n", conferenceTickets, remainingTickets)
+	fmt.Println("You can buy your tickets here to attend.")
 }
