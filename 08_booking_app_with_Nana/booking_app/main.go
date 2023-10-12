@@ -16,24 +16,7 @@ func main() {
 
 	for {
 
-		var firstName string
-		var lastName string
-		var email string
-		var userTickets uint
-
-		// we use a pointer '&' to get the memory address of the variable, that references the actual value
-		// Scan will read whatever the user enters and assign the value to the variable
-		fmt.Println("Please enter your first name:")
-		fmt.Scan(&firstName)
-
-		fmt.Println("Please enter your last name:")
-		fmt.Scan(&lastName)
-
-		fmt.Println("Please enter your email:")
-		fmt.Scan(&email)
-
-		fmt.Println("Please enter how many tickets you want:")
-		fmt.Scan(&userTickets)
+		firstName, lastName, email, userTickets := getUserInput()
 
 		isValidName, isValidEmail, isValidUserTickets := validateUserInput(firstName, lastName, email, userTickets, remainingTickets)
 
@@ -96,4 +79,28 @@ func validateUserInput(firstName string, lastName string, email string, userTick
 	isValidUserTickets := userTickets > 0 && userTickets <= remainingTickets
 
 	return isValidName, isValidEmail, isValidUserTickets
+}
+
+func getUserInput() (string, string, string, uint) {
+
+	var firstName string
+	var lastName string
+	var email string
+	var userTickets uint
+
+	// we use a pointer '&' to get the memory address of the variable, that references the actual value
+	// Scan will read whatever the user enters and assign the value to the variable
+	fmt.Println("Please enter your first name:")
+	fmt.Scan(&firstName)
+
+	fmt.Println("Please enter your last name:")
+	fmt.Scan(&lastName)
+
+	fmt.Println("Please enter your email:")
+	fmt.Scan(&email)
+
+	fmt.Println("Please enter how many tickets you want:")
+	fmt.Scan(&userTickets)
+
+	return firstName, lastName, email, userTickets
 }
