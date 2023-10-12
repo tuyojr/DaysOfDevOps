@@ -50,7 +50,8 @@ func main() {
 
 			fmt.Printf("There are now %v tickets left.\n", remainingTickets)
 
-			printFirstNames(bookings)
+			firstNames := getFirstNames(bookings)
+			fmt.Printf("The people who have booked include: %v\n", firstNames)
 
 			noTicketsRemaining := remainingTickets == 0
 
@@ -81,7 +82,7 @@ func greetUsers(conferenceName string, conferenceTickets int, remainingTickets u
 	fmt.Println("You can buy your tickets here to attend.")
 }
 
-func printFirstNames(bookings []string) {
+func getFirstNames(bookings []string) []string {
 	firstNames := []string{}
 
 	for _, booking := range bookings { // _ is a blank identifier, it is a variable we are explicitly not using.
@@ -89,5 +90,5 @@ func printFirstNames(bookings []string) {
 		firstNames = append(firstNames, names[0])
 	}
 
-	fmt.Printf("The people who have booked include: %v\n", firstNames)
+	return firstNames
 }
