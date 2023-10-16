@@ -3,7 +3,8 @@ package main
 import (
 	"booking_app/helper"
 	"fmt"
-	"strings"
+	"strconv"
+	// "strings"
 )
 
 // package level variables
@@ -14,7 +15,9 @@ const conferenceTickets = 27
 
 var conferenceName = "Muffin Conference"
 var remainingTickets uint = 27
-var bookings []string{}
+
+// an empty list of maps for our user data
+var bookings = make([]map[string]string, 0)
 
 func main() {
 
@@ -65,8 +68,9 @@ func getFirstNames() []string {
 	firstNames := []string{}
 
 	for _, booking := range bookings { // _ is a blank identifier, it is a variable we are explicitly not using.
-		var names = strings.Fields(booking)
-		firstNames = append(firstNames, names[0])
+		// var names = strings.Fields(booking)
+		// firstNames = append(firstNames, names[0])
+		firstNames = append(firstNames, booking["firstName"])
 	}
 
 	return firstNames
@@ -99,7 +103,17 @@ func getUserInput() (string, string, string, uint) {
 func bookTicket(userTickets uint, firstName string, lastName string, email string) {
 
 	remainingTickets = remainingTickets - userTickets
-	bookings = append(bookings, firstName+" "+lastName)
+
+	// variableName := map[keyDataType]valueDataType
+	// empty map ==> variableName := make(map[keyDataType]valueDataType)
+	userData := make(map[string]string)
+	userData["firstName"] = firstName
+	userData["lastName"] = lastName
+	userData["email"] = email
+	userData["userTickets"] = strconv.FormatUint(uint64(userTickets), 10)
+
+	bookings = append(bookings, userData)
+	fmt.Printf("List of bookings maps is %v.\n", bookings)
 
 	fmt.Printf("Thank you %v %v! You have successfully bought %v tickets, you should get a confirmation shortly in your email: %v.\n", firstName, lastName, userTickets, email)
 	fmt.Printf("There are now %v tickets left.\n", remainingTickets)
