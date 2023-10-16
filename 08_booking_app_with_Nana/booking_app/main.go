@@ -3,7 +3,7 @@ package main
 import (
 	"booking_app/helper"
 	"fmt"
-	"strconv"
+	// "strconv"
 	// "strings"
 )
 
@@ -17,7 +17,15 @@ var conferenceName = "Muffin Conference"
 var remainingTickets uint = 27
 
 // an empty list of maps for our user data
-var bookings = make([]map[string]string, 0)
+// var bookings = make([]map[string]string, 0)
+var bookings = make([]UserData, 0)
+
+type UserData struct {
+	firstName   string
+	lastName    string
+	email       string
+	userTickets uint
+}
 
 func main() {
 
@@ -69,8 +77,9 @@ func getFirstNames() []string {
 
 	for _, booking := range bookings { // _ is a blank identifier, it is a variable we are explicitly not using.
 		// var names = strings.Fields(booking)
-		// firstNames = append(firstNames, names[0])
-		firstNames = append(firstNames, booking["firstName"])
+		// firstNames = append(firstNames, names[0]) // pick first name from list
+		// firstNames = append(firstNames, booking["firstName"]) //pick first name from map
+		firstNames = append(firstNames, booking.firstName)
 	}
 
 	return firstNames
@@ -106,14 +115,22 @@ func bookTicket(userTickets uint, firstName string, lastName string, email strin
 
 	// variableName := map[keyDataType]valueDataType
 	// empty map ==> variableName := make(map[keyDataType]valueDataType)
-	userData := make(map[string]string)
-	userData["firstName"] = firstName
-	userData["lastName"] = lastName
-	userData["email"] = email
-	userData["userTickets"] = strconv.FormatUint(uint64(userTickets), 10)
+	// // userData := make(map[string]string)
+	// userData["firstName"] = firstName
+	// userData["lastName"] = lastName
+	// userData["email"] = email
+	// userData["userTickets"] = strconv.FormatUint(uint64(userTickets), 10)
+
+	//using struct to create a map for the user data
+	var userData = UserData{
+		firstName:   firstName,
+		lastName:    lastName,
+		email:       email,
+		userTickets: userTickets,
+	}
 
 	bookings = append(bookings, userData)
-	fmt.Printf("List of bookings maps is %v.\n", bookings)
+	fmt.Printf("List of bookings structure is %v.\n", bookings)
 
 	fmt.Printf("Thank you %v %v! You have successfully bought %v tickets, you should get a confirmation shortly in your email: %v.\n", firstName, lastName, userTickets, email)
 	fmt.Printf("There are now %v tickets left.\n", remainingTickets)
