@@ -5,6 +5,7 @@ import (
 	"fmt"
 	// "strconv"
 	// "strings"
+	"sync"
 	"time"
 )
 
@@ -28,6 +29,9 @@ type UserData struct {
 	userTickets uint
 }
 
+// using wait-group to synchronize all our threads
+// var wg = sync.WaitGroup{}
+
 func main() {
 
 	greetUsers()
@@ -41,6 +45,7 @@ func main() {
 
 			bookTicket(userTickets, firstName, lastName, email)
 
+			// wg.Add(1)
 			// using the go keyword to create another thread of our app
 			go sendTicket(userTickets, firstName, lastName, email)
 
@@ -51,7 +56,7 @@ func main() {
 
 			if noTicketsRemaining {
 				fmt.Printf("Sorry, %v tickets have been sold out. See you next year!\n", conferenceName)
-				break
+				// break
 			}
 		} else {
 			// fmt.Printf("We only have %v, you can't book %v tickets.\nTry again please.\n", remainingTickets, userTickets)
@@ -146,4 +151,5 @@ func sendTicket(userTickets uint, firstName string, lastName string, email strin
 	fmt.Println("##########################################")
 	fmt.Printf("Sending ticket: %v \nto email address: %v\n", ticket, email)
 	fmt.Println("##########################################")
+	// wg.Done()
 }
