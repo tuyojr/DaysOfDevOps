@@ -14,7 +14,7 @@ const conferenceTickets = 27
 
 var conferenceName = "Muffin Conference"
 var remainingTickets uint = 27
-var bookings []string
+var bookings []string{}
 
 func main() {
 
